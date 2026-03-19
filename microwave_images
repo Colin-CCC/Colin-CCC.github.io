@@ -1,0 +1,12 @@
+<body>
+    <div class="container">
+        <div class="btn-group">
+            <!-- 链接回页面1 -->
+            <a href="index.html" class="btn" style="background-color: #666;">返回首页</a>
+            
+            <!-- 其他链接 -->
+            <a href="#" class="btn" onclick="alert('这是一个示例按钮！')">点我试试</a>
+        </div>
+    </div>
+</body>
+</html>
