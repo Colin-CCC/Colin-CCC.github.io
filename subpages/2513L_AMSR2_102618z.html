@@ -1,0 +1,40 @@
+<style>
+        .image-container {
+            margin: 30px 0;
+            padding: 0;  /* 移除内边距 */
+            background: transparent;  /* 透明背景 */
+            border-radius: 0;  /* 移除圆角 */
+            box-shadow: none;  /* 移除阴影 */
+            overflow: hidden;  /* 防止图片溢出 */
+        }
+        .my_image {
+            max-width: 50%;        /* 响应式，不超过容器 */
+            height: auto;           /* 保持比例 */
+            display: block;         /* 块级显示 */
+            margin: 0 auto;         /* 居中*/
+            border: none;           /* 无边框 */
+            border-radius: 0;       /* 无圆角 */
+            box-shadow: none;       /* 无阴影 */
+            background: transparent; /* 透明背景 */
+            padding: 0;             /* 无内边距 */
+        }
+        @media screen and (max-width: 480px) {
+            .responsive-image {
+                border-radius: 5px;
+            }
+        }
+</style>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="/images/2513L102618zAMSR2AB89PCT.png" alt="89.0GHz PCT" class="my-image">
+        </div>
+        <div class="btn-group">
+            <a href="/images/2513L102618zAMSR2AB89PCT.png" class="btn">查看A,B通道 89.0GHz PCT图片</a>
+            <a href="/images/2513L102618zAMSR2A89PCT.png" class="btn">查看A通道 89.0GHz PCT图片</a>
+            <a href="/images/2513L102618zAMSR2B89PCT.png" class="btn">查看B通道 89.0GHz PCT图片</a>
+            <a href="/subpages/microwave_images.html" class="btn">返回</a>
+        </div>
+    </div>
+</body>
+</html>
