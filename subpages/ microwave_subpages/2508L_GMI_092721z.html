@@ -1,32 +1,51 @@
-<style>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        /* 容器居中 */
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
         .image-container {
-            margin: 30px 0;
-            padding: 0;  /* 移除内边距 */
-            background: transparent;  /* 透明背景 */
-            border-radius: 0;  /* 移除圆角 */
-            box-shadow: none;  /* 移除阴影 */
-            overflow: hidden;  /* 防止图片溢出 */
+            margin: 20px 0;
         }
-        .my_image {
-            max-width: 50%;        /* 响应式，不超过容器 */
-            height: auto;           /* 保持比例 */
-            display: block;         /* 块级显示 */
-            margin: 0 auto;         /* 居中*/
-            border: none;           /* 无边框 */
-            border-radius: 0;       /* 无圆角 */
-            box-shadow: none;       /* 无阴影 */
-            background: transparent; /* 透明背景 */
-            padding: 0;             /* 无内边距 */
+
+        .my-image {
+            max-width: 50%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border: none;
         }
-        @media screen and (max-width: 480px) {
-            .responsive-image {
-                border-radius: 5px;
-            }
+
+        .btn-group {
+            margin-top: 20px;
         }
-</style>
+            
+        .btn {
+            display: inline-block; /* 让链接可以排列 */
+            margin: 5px 10px;      /* 链接之间的间距 */
+            padding: 0;            /* 移除内边距 */
+            background: none;      /* 移除背景 */
+            border: none;          /* 移除边框 */
+            box-shadow: none;      /* 移除阴影 */
+            color: #007bff;        /* 设置链接颜色 */
+            text-decoration: underline; /* 加上下划线*/
+            font-size: 14px;
+        }
+
+        .btn:hover {
+            color: #0056b3;        /* 悬停时的颜色 */
+        }
+    </style>
+</head>
 <body>
     <div class="container">
         <div class="image-container">
+
             <img src="/images/2508L092721zGMI1b89PCTl.png" alt="89.0GHz PCT" class="my-image">
         </div>
         <div class="btn-group">
