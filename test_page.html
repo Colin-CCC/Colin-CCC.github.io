@@ -20,19 +20,17 @@
                 text-align: left;
                 width: auto; /* 根据内容自适应宽度 */
             }
-            /* 新增：为表格、表头和单元格添加统一的框线 */
+            /* 为表格、表头和单元格添加统一的框线 */
             table,th,td{
                 border: 1px solid #333333; 
             }
             th{
-                /* 修改：为了防止文字紧贴着边框，去除了原来的 padding: 0，添加了少许内边距 */
-                padding: 3px 8px; 
+                padding: 3px 8px; /* 第一个值是上下(3px)，第二个值是左右(8px) */
             }
             td{
-                /* 修改：为了防止文字紧贴着边框，去除了原来的 padding: 0，添加了少许内边距 */
                 padding: 4px 12px; 
             }
-            /* 新增：为单独分出来的编号列设置基础字体，保持与链接大小一致 */
+            /* 为单独分出来的编号列设置基础字体，保持与链接大小一致 */
             .id-text{
                 font-size: clamp(10px, 1.5vw, 16px);
                 font-weight: bold;
