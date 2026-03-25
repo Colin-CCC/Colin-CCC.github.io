@@ -24,7 +24,11 @@
             table,th,td{
                 border: 1px solid #333333; 
             }
-            th,td{
+            th{
+                /* 修改：为了防止文字紧贴着边框，去除了原来的 padding: 0，添加了少许内边距 */
+                padding: 3px 8px; 
+            }
+            td{
                 /* 修改：为了防止文字紧贴着边框，去除了原来的 padding: 0，添加了少许内边距 */
                 padding: 4px 12px; 
             }
