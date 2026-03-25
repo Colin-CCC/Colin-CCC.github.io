@@ -1,7 +1,34 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
     <head>
-    <meta charset="UTF-8">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Microwave Cyclone 列表</title>
+        <style>
+            body{
+                font-family: Arial, sans-serif;
+            }
+            .btn {
+                font-size: clamp(10px, 1.5vw, 16px); /* 最小10px，首选宽度占屏幕的1.5%，最大16px */
+                display: block;
+                margin: 5px 0; 
+                color: #0051ff;
+                text-decoration: underline;
+            }
+            table {
+                border-collapse: collapse; /* 合并边框，消除单元格间隙 */
+                text-align: left;
+            }
+            td {
+                padding: 0; /* 移除单元格内边距 */
+            }
+            .had {
+                font-size: clamp(16px, 3vw, 28px); /* 最小16px，首选宽度占屏幕的3%，最大28px */
+                display: block;
+                margin: 10px 0;
+                color: #000000;
+            }
+        </style>
     </head>
     <body>
         <div class="container">
@@ -10,9 +37,12 @@
                 <p><a href="/subpages/products/microwave/microwave_images.html" class="btn">返回上一页</a></p>
                 <br>
                 <!-- 其他链接 -->
-                <p><a href="/subpages/products/microwave/microwave_subpages/1602W_AMSR2_070604z.html" class="btn">1602W GCOM-W AMSR2 070604z</a></p>
-                <p><a href="/subpages/products/microwave/microwave_subpages/2212W_AMSR2_083004z.html" class="btn">2212W GCOM-W AMSR2 083004z</a></p>
-                <p><a href="/subpages/products/microwave/microwave_subpages/2513L_AMSR2_102618z.html" class="btn">2513L GCOM-W AMSR2 102618z</a></p>
+                <table>
+                    <tr><th><span class="had">cyclone</span></th></tr>
+                    <tr><td><a href="/subpages/products/microwave/microwave_subpages/1602W_AMSR2_070604z.html" class="btn">1602W 070604z</a></td></tr>
+                    <tr><td><a href="/subpages/products/microwave/microwave_subpages/2212W_AMSR2_083004z.html" class="btn">2212W 083004z</a></td></tr>
+                    <tr><td><a href="/subpages/products/microwave/microwave_subpages/2513L_AMSR2_102618z.html" class="btn">2513L 102618z</a></td></tr>
+                </table>
             </div>
         </div>
     </body>
