@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AMSR2 image of Cyclones</title>
+        <style>
+            body{
+                font-family: Arial, sans-serif;
+            }
+            .btn{
+                font-size: clamp(10px, 1.5vw, 16px); /* 最小10px，首选宽度占屏幕的1.5%，最大16px */
+                display: block;
+                margin: 5px 0; 
+                color: #0051ff;
+                text-decoration: underline;
+            }
+            table{
+                border-collapse: collapse; /* 合并边框，消除单元格间隙 */
+                text-align: left;
+                width: auto; /* 根据内容自适应宽度 */
+            }
+            /* 为表格、表头和单元格添加统一的框线 */
+            table,th,td{
+                border: 1px solid #333333; 
+            }
+            th{
+                padding: 2px 8px; /* 第一个值是上下(2px)，第二个值是左右(8px) */
+            }
+            td{
+                padding: 4px 12px; 
+            }
+            /* 为单独分出来的编号列设置基础字体，保持与链接大小一致 */
+            .id-text{
+                font-size: clamp(10px, 1.5vw, 16px);
+                font-weight: bold;
+                text-align: center; /* 编号居中显示更好看 */
+            }
+            .had{
+                font-size: clamp(16px, 3vw, 28px); /* 最小16px，首选宽度占屏幕的3%，最大28px */
+                display: block;
+                margin: 10px 0;
+                color: #000000;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="btn-group">
+                <p><a href="/subpages/products/microwave/microwave_images.html" class="btn">返回上一页</a></p>
+                <br>
+                <table>
+                    <tr>
+                        <th colspan="1"><span class="had">cyclone name</span></th>
+                        <th colspan="1"><span class="had">time</span></th>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="3" class="id-text">2022W Goni</td>
+                        <td><a href="/subpages/products/microwave/microwave_subpages/AMSR2/2020/2022W_AMSR2_103004z.html" class="btn">103004z</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="/subpages/products/microwave/microwave_subpages/AMSR2/2020/2022W_AMSR2_103016z.html" class="btn">103016z</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="/subpages/products/microwave/microwave_subpages/AMSR2/2020/2022W_AMSR2_103117z.html" class="btn">103117z</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
